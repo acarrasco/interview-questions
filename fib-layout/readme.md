@@ -13,9 +13,13 @@ Sample image:
 ![sample](sample.png)
 
 Requested interface:
- - Provide a JS file that exports a function "fib" that:
+ - Provide a JS file that exports a function that:
    - Takes an array of `HTMLElement` (the elements to be laid out).
    - returns a new `HTMLElement` that can be appended to the document.
  - Provide the necessary styles in a CSS file.
  - Provide a sample html file that ties everything together and showcases how
  it works.
+
+Bonus point:
+- Make the tile ordering follow a clockwise spiral pattern instead of the zig-zag
+from the simplified version.

@@ -1,34 +1,39 @@
 .fib {
-    border-style: solid;
-    border-width: 1px;
-    margin: 0px;
-    padding: 10px;
     display: flex;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
 }
 
-.fib .horizontal {
+.fib.horizontal {
     flex-direction: row;
 }
 
-.fib .vertical {
+.fib.vertical {
     flex-direction: column;
 }
 
-.fib .left {
-    width: 60%;
+.fib.big {
+    border-style: solid;
+    border-width: 1px;
 }
 
-.fib .right {
-    width: 40%;
+.fib.leaf {
+    border-style: solid;
+    border-width: 1px;
 }
 
-.fib .top {
-    height: 60%;
+.fib.horizontal>.fib.big {
+    width: 61%;
+}
+.fib.horizontal>.fib.small {
+    width: 39%;
 }
 
-.fib .bottom {
-    height: 40%;
+.fib.vertical>.fib.big {
+    height: 61%;
+}
+
+.fib.vertical>.fib.small {
+    height: 39%;
 }
